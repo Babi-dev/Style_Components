@@ -1,11 +1,33 @@
+table {
+  width: 100%;
+}
+
 thead {
   background-color: #87221f;
   color: #ffffff;
   
   tr {
-    border-radius: 20px;
     th {
-      padding: 20px;
+      padding: 10px;
+
+      font-family: TitilliumWeb;
+      font-size: 16px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.18px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    th:first-child{
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    th:last-child{
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
     }
   }
 }
@@ -14,9 +36,40 @@ tbody {
   width: 100%;
   
   tr {
-    border-radius: 20px;
     td {
-      padding: 20px;
+      padding: 10px;
+
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.16px;
+      text-align: center;
+      color: #323232;
+    }
+    td:first-child{
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    td:last-child{
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    
+    .buttonsActions {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      align-content: center;
+
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+      }
     }
   }
 }

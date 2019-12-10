@@ -10,6 +10,7 @@ const Table = ({ Data, Columns }) => {
             {Data.map((e, index) => {
               return <th key={index}>{e.title}</th>;
             })}
+            {true && <th />}
           </tr>
         </thead>
         <tbody>
@@ -18,6 +19,11 @@ const Table = ({ Data, Columns }) => {
               {Object.keys(e).map((item, id) => (
                 <td key={id}>{e[item]}</td>
               ))}
+              {true && (
+                <td className="buttonsActions">
+                  <button>Editar</button>|<button>Enviar</button>
+                </td>
+              )}
             </tr>
           ))}
         </tbody>
