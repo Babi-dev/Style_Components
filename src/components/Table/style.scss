@@ -1,0 +1,26 @@
+thead {
+  background-color: #87221f;
+  color: #ffffff;
+  
+  tr {
+    border-radius: 20px;
+    th {
+      padding: 20px;
+    }
+  }
+}
+
+tbody {
+  width: 100%;
+  
+  tr {
+    border-radius: 20px;
+    td {
+      padding: 20px;
+    }
+  }
+}
+
+tr:nth-child(even){
+  background-color: #efefef;
+}
