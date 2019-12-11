@@ -4,6 +4,19 @@
       background: transparent;
       border: none;
       cursor: pointer;
+
+      font-family: TitilliumWeb;
+      font-size: 14px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.16px;
+      color: #393939;
+    }
+
+    .ant-divider, .ant-divider-vertical {
+      background-color: #393939;
     }
   }
   .ant-table-thead tr th {
@@ -33,6 +46,14 @@
   }
   
   td {
+    height: 16px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.16px;
     color: #323232;
   }
 
@@ -44,14 +65,52 @@
     align-items: center;
     align-content: center;
 
+    .ant-pagination-prev 
+    .ant-pagination-item-link, 
+    .ant-pagination-next 
+    .ant-pagination-item-link{
+      border: none;
+      background-color: #87221f;
+      color: #ffffff;
+    }
+
+    .ant-pagination-disabled a, 
+    .ant-pagination-disabled:hover a, 
+    .ant-pagination-disabled:focus a, 
+    .ant-pagination-disabled 
+    .ant-pagination-item-link, 
+    .ant-pagination-disabled:hover 
+    .ant-pagination-item-link, 
+    .ant-pagination-disabled:focus 
+    .ant-pagination-item-link{
+      border: none;
+      background-color: #d0d0d0;
+      color: #ffffff;
+    }
+
+    .ant-pagination-item {
+      border: none;
+
+      a {
+        font-family: TitilliumWeb;
+        font-size: 14px;
+        font-weight: 600;
+        color: #323232;
+      }
+    }
+
     .ant-pagination-item-active {
       font-weight: 500;
       background: #fff;
-      border-color: #87221f;
-
+      border: none;
+      
       a {
+        font-family: TitilliumWeb;
+        font-size: 14px;
+        font-weight: 600;
         color: #87221f;
       }
+
     }
   }
 }

@@ -17,13 +17,55 @@ const TableAntd = () => {
       address: "10 Downing Street"
     },
     {
-      key: "1",
+      key: "3",
       name: "Mike",
       age: 32,
       address: "10 Downing Street"
     },
     {
-      key: "1",
+      key: "4",
+      name: "Mike",
+      age: 32,
+      address: "10 Downing Street"
+    },
+    {
+      key: "5",
+      name: "Mike",
+      age: 32,
+      address: "10 Downing Street"
+    },
+    {
+      key: "6",
+      name: "John",
+      age: 42,
+      address: "10 Downing Street"
+    },
+    {
+      key: "7",
+      name: "Mike",
+      age: 32,
+      address: "10 Downing Street"
+    },
+    {
+      key: "8",
+      name: "Mike",
+      age: 32,
+      address: "10 Downing Street"
+    },
+    {
+      key: "9",
+      name: "Mike",
+      age: 32,
+      address: "10 Downing Street"
+    },
+    {
+      key: "10",
+      name: "John",
+      age: 42,
+      address: "10 Downing Street"
+    },
+    {
+      key: "11",
       name: "Mike",
       age: 32,
       address: "10 Downing Street"
@@ -49,7 +91,7 @@ const TableAntd = () => {
     {
       title: "",
       key: "action",
-      render: (text, record) => (
+      render: () => (
         <span className="ActionButtons">
           <button>Editar</button>
           <Divider type="vertical" />
@@ -61,7 +103,13 @@ const TableAntd = () => {
 
   return (
     <>
-      <Table className="teste" dataSource={dataSource} columns={columns} />;
+      <Table
+        className="teste"
+        dataSource={dataSource}
+        columns={columns}
+        pagination={{ pageSize: 10 }}
+      />
+      ;
     </>
   );
 };
