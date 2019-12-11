@@ -1,0 +1,57 @@
+.teste{
+  .ActionButtons {
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .ant-table-thead tr th {
+    background-color: #87221f;
+    color: #ffffff;
+    font-family: TitilliumWeb;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.18px;
+  }
+  
+  .ant-table-thead th:first-child{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  
+  .ant-table-thead th:last-child{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  
+  tr:nth-child(even){
+    background-color: #efefef;
+  }
+  
+  td {
+    color: #323232;
+  }
+
+  .ant-table-pagination.ant-pagination {
+    width: 100%;
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    .ant-pagination-item-active {
+      font-weight: 500;
+      background: #fff;
+      border-color: #87221f;
+
+      a {
+        color: #87221f;
+      }
+    }
+  }
+}
